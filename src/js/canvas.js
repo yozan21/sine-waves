@@ -15,7 +15,7 @@ const wave = {
   frequency: 0.01,
 };
 const strokeColor = {
-  h: 0,
+  h: 200,
   s: 50,
   l: 50,
 };
@@ -28,7 +28,7 @@ const bgColor = {
 };
 const waveFolder = gui.addFolder("wave");
 waveFolder.add(wave, "y", 0, canvas.height);
-waveFolder.add(wave, "length", -0.01, 0.01);
+waveFolder.add(wave, "length", -0.05, 0.05);
 waveFolder.add(wave, "amplitude", -300, 300);
 waveFolder.add(wave, "frequency", -0.01, 1);
 waveFolder.open();
